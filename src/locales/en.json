@@ -1,3 +1,9 @@
 {
-  "message": "hello i18n !!"
+  "home": {
+    "welcome":"Welcome on the quizz",
+    "subtitle":"some subtitle"
+  },
+  "results":{},
+  "question-1":{},
+  "global":{"next":"next"}
 }
