@@ -1,10 +1,10 @@
 <template>
   <Question
-    :title=" $t('question-1.title') "
-    :subtitle=" $t('question-1.subtitle') "
+    :title=" $t('question-2.title') "
+    :subtitle=" $t('question-2.subtitle') "
     :answers="answers"
-    id="1"
-    nextQuestion="/questions/2"
+    id="2"
+    nextQuestion="/results"
   ></Question>
 </template>
 
@@ -15,11 +15,11 @@
 import Question from "../components/Question";
 
 export default {
-  name: "question-1",
+  name: "question-2",
   components: { Question },
   data() {
     return {
-      answers: this.$i18n.t("question-1.answers")
+      answers: this.$i18n.t("question-2.answers")
     };
   },
   mounted() {},

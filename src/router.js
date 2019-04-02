@@ -28,6 +28,10 @@ export default new Router({
       component: () => import('./views/Question-1.vue')
     },
     {
+      path: '/questions/2',
+      component: () => import('./views/Question-2.vue')
+    },
+    {
       path: '*',
       component: Home
     }

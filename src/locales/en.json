@@ -4,6 +4,11 @@
     "subtitle":"some subtitle"
   },
   "results":{},
-  "question-1":{},
+  "question-1":{
+    "answers":["truc", "machin", "chose"]
+  },
+  "question-2":{
+    "answers":["truc 2", "machin 2", "chose 2 "]
+  },
   "global":{"next":"next"}
 }
