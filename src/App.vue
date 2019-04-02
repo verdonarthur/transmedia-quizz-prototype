@@ -26,10 +26,18 @@
     </nav>
 
     <div>
-      <router-view/>
+      <transition name="fade">
+        <router-view/>
+      </transition>
     </div>
   </div>
 </template>
 
 <style lang="scss">
+//.fade-enter-active, .fade-leave-active {
+//  transition: opacity 0.3s;
+//}
+//.fade-enter, .fade-leave-to {
+//  transition: opacity 0.3s;
+//}
 </style>

@@ -17,23 +17,23 @@
 </style>
 
 <script>
-import QuizzStorage from "../utils/QuizzStorage";
+import QuizzStorage from '../utils/QuizzStorage'
 
 export default {
-  name: "results",
-  data() {
+  name: 'results',
+  data () {
     return {
       results: {},
-      quizzStorage : {}
-    };
+      quizzStorage: {}
+    }
   },
-  mounted() {
-    this.quizzStorage = QuizzStorage.initQuizzStoage();
-    this.results = this.quizzStorage.results;
+  mounted () {
+    this.quizzStorage = QuizzStorage.initQuizzStoage()
+    this.results = this.quizzStorage.results
   },
-  beforeDestroy() {
-    this.quizzStorage = new QuizzStorage();
-    this.quizzStorage.save();
+  beforeDestroy () {
+    this.quizzStorage = new QuizzStorage()
+    this.quizzStorage.save()
   }
-};
+}
 </script>

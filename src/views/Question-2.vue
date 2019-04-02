@@ -12,18 +12,18 @@
 </style>
 
 <script>
-import Question from "../components/Question";
+import Question from '../components/Question'
 
 export default {
-  name: "question-2",
+  name: 'question-2',
   components: { Question },
-  data() {
+  data () {
     return {
-      answers: this.$i18n.t("question-2.answers")
-    };
+      answers: this.$i18n.t('question-2.answers')
+    }
   },
-  mounted() {},
+  mounted () {},
   methods: {},
   watch: {}
-};
+}
 </script>

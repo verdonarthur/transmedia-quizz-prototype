@@ -24,31 +24,31 @@
 </style>
 
 <script>
-import QuizzStorage from "../utils/QuizzStorage";
+import QuizzStorage from '../utils/QuizzStorage'
 
 export default {
-  name: "question",
-  props: ["id","title", "subtitle", "answers", "nextQuestion"],
-  data() {
+  name: 'question',
+  props: ['id', 'title', 'subtitle', 'answers', 'nextQuestion'],
+  data () {
     return {
       answerData: this.answers[0] ? this.answers[0] : null,
       quizzStorage: {}
-    };
+    }
   },
-  mounted() {
-    this.quizzStorage = QuizzStorage.initQuizzStoage();
-    this.quizzStorage.saveResults(this.id, this.answerData);
+  mounted () {
+    this.quizzStorage = QuizzStorage.initQuizzStoage()
+    this.quizzStorage.saveResults(this.id, this.answerData)
   },
   methods: {
-    next() {
-      this.quizzStorage.save();
-      this.$router.push(this.nextQuestion);
+    next () {
+      this.quizzStorage.save()
+      this.$router.push(this.nextQuestion)
     }
   },
   watch: {
-    answerData(newAnswer) {
-      this.quizzStorage.saveResults(1, newAnswer);
+    answerData (newAnswer) {
+      this.quizzStorage.saveResults(1, newAnswer)
     }
   }
-};
+}
 </script>
